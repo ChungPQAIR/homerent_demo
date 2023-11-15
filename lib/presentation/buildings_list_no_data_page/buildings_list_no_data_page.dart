@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:phan_quc_chung_s_application2/core/app_export.dart';
-import 'package:phan_quc_chung_s_application2/presentation/buildings_list_no_data_page/building_filter_screen.dart';
+import 'package:phan_quc_chung_s_application2/presentation/buildings_list_no_data_page/buildingFilterScreen.dart';
 import 'package:phan_quc_chung_s_application2/widgets/app_bar/appbar_image.dart';
 import 'package:phan_quc_chung_s_application2/widgets/app_bar/appbar_leading_image.dart';
 import 'package:phan_quc_chung_s_application2/widgets/app_bar/appbar_subtitle.dart';
@@ -109,7 +109,6 @@ class BuildingsListNoDataPage extends StatelessWidget {
   Widget _buildFloatingActionButton(BuildContext context) {
     return FloatingActionButton(
       onPressed: () {
-        // Chuyển sang màn hình lọc toà nhà khi nhấn vào nút thêm
         Navigator.push(
           context,
           MaterialPageRoute(

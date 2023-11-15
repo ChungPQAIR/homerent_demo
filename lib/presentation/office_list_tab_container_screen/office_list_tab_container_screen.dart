@@ -42,12 +42,11 @@ class OfficeListTabContainerScreenState
                   _buildTabview(context),
                   SizedBox(
                       height: 678.v,
-                      child: TabBarView(
-                          controller: tabviewController,
-                          children: [
-                            OfficeListPage(),
-                            OfficeListAccordionExpandedPage()
-                          ]))
+                      child:
+                          TabBarView(controller: tabviewController, children: [
+                        OfficeListPage(),
+                        OfficeListAccordionExpandedPage(),
+                      ]))
                 ])),
             floatingActionButton: _buildFloatingActionButton(context)));
   }
@@ -57,13 +56,13 @@ class OfficeListTabContainerScreenState
     return Container(
         decoration: AppDecoration.fillGreen,
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          SizedBox(height: 2.v),
+          SizedBox(height: 2),
           CustomAppBar(
-              height: 38.v,
-              leadingWidth: 41.h,
+              height: 38,
+              leadingWidth: 41,
               leading: AppbarLeadingImage(
                   imagePath: ImageConstant.imgArrowLeft,
-                  margin: EdgeInsets.only(left: 17.h, top: 6.v, bottom: 8.v),
+                  margin: EdgeInsets.only(left: 17, top: 6, bottom: 8),
                   onTap: () {
                     onTapArrowLeft(context);
                   }),
@@ -72,7 +71,7 @@ class OfficeListTabContainerScreenState
               actions: [
                 AppbarSubtitleThree(
                     text: "Chỉnh sửa",
-                    margin: EdgeInsets.fromLTRB(17.h, 7.v, 17.h, 10.v))
+                    margin: EdgeInsets.fromLTRB(17, 7, 17, 10))
               ],
               styleType: Style.bgFill)
         ]));
@@ -117,6 +116,7 @@ class OfficeListTabContainerScreenState
       },
       backgroundColor: appTheme.lightBlue400,
       child: CustomImageView(
+        border: Border(bottom: BorderSide(color: Colors.black)),
         imagePath: ImageConstant.imgIconPlus,
         alignment: Alignment.center,
         height: 28.0.v,

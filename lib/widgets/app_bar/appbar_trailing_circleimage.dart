@@ -23,7 +23,9 @@ class AppbarTrailingCircleimage extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadiusStyle.circleBorder20,
       onTap: () {
-        onTap!.call();
+        if (onTap != null) {
+          onTap!();
+        }
       },
       child: Padding(
         padding: margin ?? EdgeInsets.zero,

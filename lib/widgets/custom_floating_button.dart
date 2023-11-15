@@ -11,6 +11,7 @@ class CustomFloatingButton extends StatelessWidget {
     this.height,
     this.decoration,
     this.child,
+    required Null Function() onPressed,
   }) : super(
           key: key,
         );

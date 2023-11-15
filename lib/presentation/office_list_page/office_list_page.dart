@@ -98,10 +98,10 @@ class OfficeListPageState extends State<OfficeListPage>
               ),
             ],
           ),
-          SizedBox(height: 24.v),
+          SizedBox(height: 24),
           CustomDropDown(
             icon: Container(
-              margin: EdgeInsets.fromLTRB(30.h, 19.v, 16.h, 19.v),
+              margin: EdgeInsets.fromLTRB(30, 19, 16, 19),
               child: CustomImageView(
                 imagePath: ImageConstant.imgArrowdown,
                 height: 24.adaptSize,
@@ -112,10 +112,10 @@ class OfficeListPageState extends State<OfficeListPage>
             items: dropdownItemList,
             onChanged: (value) {},
           ),
-          SizedBox(height: 16.v),
+          SizedBox(height: 16),
           CustomDropDown(
             icon: Container(
-              margin: EdgeInsets.fromLTRB(30.h, 19.v, 16.h, 19.v),
+              margin: EdgeInsets.fromLTRB(30, 19, 16, 19),
               child: CustomImageView(
                 imagePath: ImageConstant.imgArrowdown,
                 height: 24.adaptSize,
